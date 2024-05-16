@@ -14,7 +14,7 @@ client = OpenAI(
   api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-def get_completion_from_messages(system_message, user_message, model="gpt-3.5-turbo", temperature=0, max_tokens=500) -> str:
+def get_completion_from_messages(system_message, user_message, model="gpt-4-turbo", temperature=0, max_tokens=500) -> str:
 
     messages = [
         {'role': 'system', 'content': system_message},
